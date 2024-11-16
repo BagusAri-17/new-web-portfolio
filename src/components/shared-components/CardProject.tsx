@@ -1,25 +1,53 @@
 import Image from "next/image"
+import { Button } from "./Button"
+import { StaticImport } from "next/dist/shared/lib/get-img-props"
+import { Tag } from "./Tag"
 
-export const CardProject = () => {
+
+interface ProjectProps {
+    title: string,
+    description: string,
+    tag: Array<any>,
+    linkDemo: string,
+    linkCode: string,
+    image: StaticImport
+}
+
+export const CardProject: React.FC<ProjectProps> = ({ title, description, tag, linkDemo, linkCode, image }) => {
     return (
         <>
             <div className="bg-gray-800 rounded-3xl overflow-hidden outline outline-2 outline-white/20 -outline-offset-2 px-8 pt-8 flex flex-col h-full">
                 <div className="flex-grow flex flex-col gap-y-4">
                     <div className="flex flex-col gap-y-2">
-                        <h3 className="text-xl font-semibold">Umah Buku</h3>
-                        <p className="text-sm text-white/60 line-clamp-2">Easily create custom watermarks for your images. Adjust text, size, position, and style to personalize your watermark.</p>
+                        <h3 className="text-xl font-semibold">{title}</h3>
+                        <div className="group relative inline-block hover:cursor-pointer">
+                            <p className="text-sm text-white/60 line-clamp-2">{description}</p>
+                            <p className="invisible group-hover:visible opacity-0 mt-2 group-hover:opacity-100 transition top-full duration-300 bg-purple-300 p-2 rounded absolute text-sm text-white">{description}</p>
+                        </div>
                     </div>
                     <div className="flex flex-wrap gap-2">
-                        <span className="text-sm py-1 px-3 bg-purple-300/10 text-purple-300 rounded-full">Typescript</span>
-                        <span className="text-sm py-1 px-3 bg-purple-300/10 text-purple-300 rounded-full">Node.js</span>
+                        {tag.map((item, index) => (
+                            <Tag key={index} label={item} />
+                        ))}
                     </div>
-                    <div className="flex flex-wrap items-center gap-2">
-                        <button className="inline-flex text-sm items-center justify-center flex-1 px-3 h-9 border border-white/15 rounded-full">Live Demo</button>
-                        <button className="inline-flex text-sm items-center justify-center flex-1 px-3 h-9 border border-white/15 rounded-full">Source Code</button>
-                    </div>
+                    {
+                        linkDemo && linkCode ?
+                            <div className="flex flex-wrap items-center gap-2">
+                                <Button link={linkDemo} label={'Live Demo'} position={'left'} icon={null} />
+                                <Button link={linkCode} label={'Source Code'} position={'left'} icon={null} />
+                            </div> :
+                        linkDemo === '' ? 
+                            <div>
+                                <Button link={linkCode} label={'Source Code'} position={'left'} icon={null} />
+                            </div> :
+                        linkCode === '' ? 
+                            <div>
+                                <Button link={linkDemo} label={'Live Demo'} position={'left'} icon={null} />
+                            </div> : ''
+                    }
                 </div>
-                <Image className="w-full h-auto mt-4 transition duration-300 hover:scale-110" src="/images/dark-saas-landing-page.png" alt="" width={400} height={400} />
+                <Image className="w-full h-auto mt-4 transition duration-300 hover:scale-110 rounded-t-xl" src={image} alt={title} width={400} height={400} />
             </div>
         </>
     )
-}
+} 

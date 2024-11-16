@@ -27,7 +27,7 @@ export const Header = () => {
 
     return (
         <>
-            <header className="flex justify-center items-center fixed z-10 top-3 w-full">
+            <header className="flex justify-center items-center fixed z-20 top-3 w-full">
                 <div className="border border-white/15 rounded-full bg-white/10 backdrop-blur">
                     <nav className="flex gap-1 p-0.5">
                         {headerLinks.map((item, index) => (

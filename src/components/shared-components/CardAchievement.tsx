@@ -1,4 +1,5 @@
 import { Button } from "./Button"
+import { Tag } from "./Tag"
 
 interface AchievementProps {
     title: string,
@@ -32,10 +33,14 @@ export const CardAchievement: React.FC<AchievementProps> = ({title, time, place,
                         </div>
                     </div>
                     <div>
-                        <span className="text-sm py-1 px-3 bg-purple-300/10 text-purple-300 rounded-full">{tag}</span>
+                        <Tag label={tag} />
                     </div>
                     <div>
-                        <Button link={link} label={'Certificate'} position={'left'} icon={null} />
+                        <Button link={link} label={'Certificate'} position={'right'} icon={
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>} 
+                        />
                     </div>
                 </div>
             </div>

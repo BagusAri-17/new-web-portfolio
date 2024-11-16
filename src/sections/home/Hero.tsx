@@ -1,6 +1,7 @@
 import { Bubble } from "@/components/shared-components/Bubble";
 import { Button } from "@/components/shared-components/Button";
 import Image from "next/image";
+import heroImage from "@/assets/images/about/about-me-1x1.png"
 
 export const Hero = () => {
     return (
@@ -39,10 +40,10 @@ export const Hero = () => {
                     </div>
                 </div>
                 <div className="container z-10 relative">
-                    <Image className="rounded-full size-[100px] mx-auto" src="https://i.pinimg.com/564x/04/7d/71/047d7192b3e84887d92994fe36004c09.jpg" width={100} height={100} alt="profile-image" />
+                    <Image className="rounded-full size-[100px] mx-auto" src={heroImage} width={100} height={100} alt="profile-image" />
                     <div className="flex flex-col gap-y-4 mt-8 items-center max-w-lg mx-auto">
-                        <h1 className="text-3xl md:text-5xl text-center font-bold tracking-wide">Hello, I'm Bagus Ari</h1>
-                        <p className="text-center text-white/60 md:text-lg">A Software Engineering with 2 years experience who trying to specialize in Frontend & UI/UX Design.</p>
+                        <h1 className="text-3xl md:text-5xl text-center font-bold tracking-wide">Hello, I'm <span className="text-purple-300">Bagus Ari</span></h1>
+                        <p className="text-center text-white/60 md:text-lg">A Junior Software Engineer with one year of experience, focusing on Frontend Development and UI/UX Design.</p>
                         <div className="flex flex-col md:flex-row md:gap-x-2 items-center gap-y-2 justify-center">
                             <Button link={'/CV_IdaBagusAriWidhiana.pdf'} label={'Download CV'} position={'left'} icon={
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
