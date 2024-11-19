@@ -24,7 +24,7 @@ export const Hero = () => {
                 <div className="container">
                     <div className="flex gap-8 flex-col lg:flex-row lg:justify-between relative z-10">
                         <div className="flex flex-col gap-y-8 max-w-2xl">
-                            <h2 className="text-2xl md:text-4xl font-bold">Hi, I'm <span className="text-purple-300">Bagus Ari</span>. A junior Software Engineer and UI/UX Designer based in Bali, Indonesia.</h2>
+                            <h2 className="text-2xl md:text-4xl font-bold">Hi, I&apos;m <span className="text-purple-300">Bagus Ari</span>. A junior Software Engineer and UI/UX Designer based in Bali, Indonesia.</h2>
                             <div className="flex flex-col gap-y-4">
                                 {aboutParagraph.map((item, index) => (
                                     <p key={index} className="text-white/60 text-sm md:text-base">{item}</p>
@@ -55,7 +55,7 @@ export const Hero = () => {
                             </div>
                         </div>
                         <div>
-                            <Image className="rounded-xl sm:rounded-2xl h-auto mx-auto" src={heroImage}  width={400} height={400} alt="" />
+                            <Image className="rounded-xl sm:rounded-2xl h-auto mx-auto" src={heroImage}  width={400} height={400} alt="hero-image" />
                         </div>
                     </div>
                 </div>

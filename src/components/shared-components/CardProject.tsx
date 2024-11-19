@@ -8,7 +8,7 @@ import { Tag } from "./Tag";
 interface ProjectProps {
     title: string,
     description: string,
-    tag: Array<any>,
+    tag: Array<string>,
     linkDemo: string,
     linkCode: string,
     image: StaticImport

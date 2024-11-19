@@ -5,7 +5,7 @@ interface ExperienceProps {
     time: string,
     place: string,
     tag: string,
-    description: Array<any>,
+    description: Array<string>,
 }
 
 export const CardExperience: React.FC<ExperienceProps> = ({title, time, place, tag, description}) => {
