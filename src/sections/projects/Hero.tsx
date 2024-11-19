@@ -1,13 +1,16 @@
-import { CardProject } from "@/components/shared-components/CardProject"
-import umahBukuImage from "@/assets/images/projects/project-umahbuku.png"
-import myJournalsImage from "@/assets/images/projects/project-myjournals.png"
-import wisataCemagiImage from "@/assets/images/projects/project-wisatacemagi.png"
-import sportInspireIDImage from "@/assets/images/projects/project-sportinspireid.png"
-import himaifUdayanaImage from "@/assets/images/projects/project-himaifudayana.png"
-import inventionImage from "@/assets/images/projects/project-invention.png"
-import hidataImage from "@/assets/images/projects/project-hidata.png"
-import { Tag } from "@/components/shared-components/Tag"
-import { HeaderSection } from "@/components/shared-components/HeaderSection"
+import React from "react";
+
+import { CardProject } from "@/components/shared-components/CardProject";
+import { HeaderSection } from "@/components/shared-components/HeaderSection";
+import { Tag } from "@/components/shared-components/Tag";
+
+import umahBukuImage from "@/assets/images/projects/project-umahbuku.png";
+import myJournalsImage from "@/assets/images/projects/project-myjournals.png";
+import wisataCemagiImage from "@/assets/images/projects/project-wisatacemagi.png";
+import sportInspireIDImage from "@/assets/images/projects/project-sportinspireid.png";
+import himaifUdayanaImage from "@/assets/images/projects/project-himaifudayana.png";
+import inventionImage from "@/assets/images/projects/project-invention.png";
+import hidataImage from "@/assets/images/projects/project-hidata.png";
 
 const projects = [
     {
@@ -66,7 +69,7 @@ const projects = [
         linkCode: '',
         image: hidataImage
     }
-]
+];
 
 export const Hero = () => {
     return (

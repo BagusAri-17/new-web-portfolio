@@ -1,3 +1,5 @@
+import React from "react";
+
 const icons = [
     {
         id: 1,
@@ -220,11 +222,11 @@ const icons = [
                 </g>
         </svg>
     },
-]
-
-const duplicatedIcons = [...icons, ...icons];
+];
 
 export const Tape = () => {
+    const duplicatedIcons = [...icons, ...icons];
+    
     return (
         <>
             <section className="py-16 lg:py-24 overflow-hidden">

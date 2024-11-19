@@ -1,7 +1,8 @@
-import Image from "next/image"
-import { Button } from "./Button"
-import { StaticImport } from "next/dist/shared/lib/get-img-props"
-import { Tag } from "./Tag"
+import Image from "next/image";
+
+import { Button } from "./Button";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { Tag } from "./Tag";
 
 
 interface ProjectProps {

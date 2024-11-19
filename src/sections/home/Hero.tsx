@@ -1,7 +1,10 @@
+import React from "react";
+import Image from "next/image";
+
 import { Bubble } from "@/components/shared-components/Bubble";
 import { Button } from "@/components/shared-components/Button";
-import Image from "next/image";
-import heroImage from "@/assets/images/about/about-me-1x1.png"
+
+import heroImage from "@/assets/images/about/about-me-1x1.png";
 
 export const Hero = () => {
     return (

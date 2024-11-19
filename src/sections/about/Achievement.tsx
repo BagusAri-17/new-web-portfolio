@@ -1,6 +1,8 @@
-import { CardAchievement } from "@/components/shared-components/CardAchievement"
-import { HeaderSection } from "@/components/shared-components/HeaderSection"
-import { Tag } from "@/components/shared-components/Tag"
+import React from "react";
+
+import { CardAchievement } from "@/components/shared-components/CardAchievement";
+import { HeaderSection } from "@/components/shared-components/HeaderSection";
+import { Tag } from "@/components/shared-components/Tag";
 
 const achievement = [
     {

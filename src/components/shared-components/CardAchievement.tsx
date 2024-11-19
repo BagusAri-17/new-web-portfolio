@@ -1,5 +1,5 @@
-import { Button } from "./Button"
-import { Tag } from "./Tag"
+import { Button } from "./Button";
+import { Tag } from "./Tag";
 
 interface AchievementProps {
     title: string,

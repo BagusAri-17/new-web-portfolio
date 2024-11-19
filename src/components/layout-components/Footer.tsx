@@ -1,8 +1,6 @@
+import React from "react";
+
 const footerLinks = [
-    // {
-    //     title: 'Youtube',
-    //     link: ''
-    // },
     {
         title: 'LinkedIn',
         link: 'https://www.linkedin.com/in/bagus-ari/'
@@ -15,16 +13,18 @@ const footerLinks = [
         title: 'Github',
         link: 'https://github.com/BagusAri-17'
     },
-]
+];
 
-export const Footer = () => { 
+export const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
         <>
             <footer className="relative z-10 overflow-x-clip pt-16 lg:pt-24">
                 <div className="-z-10 absolute h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-purple-300/30 [mask-image:radial-gradient(50%_50%_at_bottom_center,black,transparent)]"></div>
                 <div className="container">
                     <div className="border-t border-white/15 py-6 flex flex-col md:flex-row md:justify-between items-center gap-8">
-                        <div className="text-sm text-white/40">&copy; 2024. All rights reserved.</div>
+                        <div className="text-sm text-white/40">&copy; {currentYear}. All rights reserved.</div>
                         <nav className="flex flex-col md:flex-row items-center gap-8">
                             {footerLinks.map((item, index) => (
                                 <a key={index} href={item.link} className="inline-flex items-center gap-1.5 text-white/40 transition hover:text-white duration-300 hover:underline">

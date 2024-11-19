@@ -1,7 +1,10 @@
-import { Button } from "@/components/shared-components/Button"
-import Image from "next/image"
-import heroImage from "@/assets/images/about/about-me.png"
-import { Bubble } from "@/components/shared-components/Bubble"
+import React from "react";
+import Image from "next/image";
+
+import { Bubble } from "@/components/shared-components/Bubble";
+import { Button } from "@/components/shared-components/Button";
+
+import heroImage from "@/assets/images/about/about-me.png";
 
 const aboutParagraph = [
     "My name is Ida Bagus Ari Widhiana. You can call me Bagus Ari. I am a student at Udayana University, majoring in Computer Science, with expertise in Software Engineering and UI/UX Design.",
@@ -10,7 +13,6 @@ const aboutParagraph = [
     "I reside in Bali. And I'm always enthusiastic about connecting with new people. If you'd like to get in touch, please feel free to visit my social media or reach out to me via email.",
     "Thank you, and I'm looking forward to connecting with you!"
 ]
-
 
 export const Hero = () => {
     return (
@@ -53,7 +55,7 @@ export const Hero = () => {
                             </div>
                         </div>
                         <div>
-                            <Image className="rounded-xl sm:rounded-2xl h-auto" src={heroImage}  width={400} height={400} alt="" />
+                            <Image className="rounded-xl sm:rounded-2xl h-auto mx-auto" src={heroImage}  width={400} height={400} alt="" />
                         </div>
                     </div>
                 </div>

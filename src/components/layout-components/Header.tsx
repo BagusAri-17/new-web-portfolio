@@ -1,7 +1,9 @@
 'use client';
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation'
+import React from "react";
+import Link from "next/link";
+
+import { usePathname } from "next/navigation";
 
 const headerLinks = [
     {
@@ -20,7 +22,7 @@ const headerLinks = [
         title: 'Works',
         link: '/works'
     },
-]
+];
 
 export const Header = () => {
     const currentPath = usePathname();

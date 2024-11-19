@@ -1,5 +1,7 @@
-import { CardTechStack } from "@/components/shared-components/CardTechStack"
-import { HeaderSection } from "@/components/shared-components/HeaderSection"
+import React from "react";
+
+import { CardTechStack } from "@/components/shared-components/CardTechStack";
+import { HeaderSection } from "@/components/shared-components/HeaderSection";
 
 const icons = [
     {

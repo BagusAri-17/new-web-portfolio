@@ -1,6 +1,8 @@
-import { CardExperience } from "@/components/shared-components/CardExperience"
-import { HeaderSection } from "@/components/shared-components/HeaderSection"
-import { Tag } from "@/components/shared-components/Tag"
+import React from "react";
+
+import { CardExperience } from "@/components/shared-components/CardExperience";
+import { HeaderSection } from "@/components/shared-components/HeaderSection";
+import { Tag } from "@/components/shared-components/Tag";
 
 const experiences = [
     {
@@ -66,7 +68,7 @@ const experiences = [
             'Collaborated with the team to implement backend logic supporting website functionality and user interactions.'
         ],
     },
-]
+];
 
 export const Hero = () => {
     return (
