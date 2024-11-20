@@ -21,8 +21,9 @@ const experiences = [
         place: 'Bali, Indonesia',
         tag: 'Part Time',
         description: [
-            'Developed the frontend of the Desa Wisata Cemagi website as part of an street vendor project assignment.', 
-            'Assist in serving the community in Cemagi village regarding correspondence.'
+            'Contributed to the development of Desa Wisata Cemagi as a core internship project, focusing on building the frontend of the tourism website using React.JS and TailwindCSS.',
+            'Collaborated with a team to create a user-friendly and visually appealing digital tourism platform.', 
+            'Assisted the community in Desa Cemagi with technical and administrative tasks related to correspondence.'
         ],
     },
     {
@@ -41,9 +42,9 @@ const experiences = [
         place: 'Jakarta, Indonesia',
         tag: 'Internship',
         description: [
-            'Designed and created the layout for the Hidata company website.',
-            'Converted Hidata website designs into responsive and interactive web pages.',
-            'Collaborated on client projects by contributing to website development and ensuring functional implementation.'
+            'Designed and developed Hidata.id, the official company website, with responsive and interactive layouts to enhance user engagement.',
+            'Translated research insights into user-centric UI/UX designs, improving the website’s functionality and aesthetics.',
+            'Collaborated with the team to deliver client projects, ensuring seamless implementation and high-quality outcomes.'
         ],
     },
     {
