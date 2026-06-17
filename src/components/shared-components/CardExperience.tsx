@@ -4,7 +4,7 @@ interface ExperienceProps {
     title: string,
     time: string,
     place: string,
-    tag: string,
+    tag: Array<string>,
     description: Array<string>,
 }
 
@@ -31,8 +31,10 @@ export const CardExperience: React.FC<ExperienceProps> = ({title, time, place, t
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <Tag label={tag} />
+                    <div className="flex flex-wrap gap-2">
+                        {tag.map((item, index) => (
+                            <Tag key={index} label={item} />
+                        ))}
                     </div>
                     <ul className="flex flex-col gap-y-1 list-disc list-inside">
                         {description.map((item, index) => (

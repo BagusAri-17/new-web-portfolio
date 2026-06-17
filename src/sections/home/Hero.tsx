@@ -46,7 +46,7 @@ export const Hero = () => {
                     <Image className="rounded-full size-[100px] mx-auto" src={heroImage} width={100} height={100} alt="profile-image" />
                     <div className="flex flex-col gap-y-4 mt-8 items-center max-w-lg mx-auto">
                         <h1 className="text-3xl md:text-5xl text-center font-bold tracking-wide">Hello, I&apos;m <span className="text-purple-300">Bagus Ari</span></h1>
-                        <p className="text-center text-white/60 md:text-lg">A Junior Software Engineer with one year of experience, focusing on Frontend Development and UI/UX Design.</p>
+                        <p className="text-center text-white/60 md:text-lg">A passionate Software Engineer & UI/UX Designer with ~1 year of industry experience. Dedicated to crafting efficient and user-friendly digital solutions.</p>
                         <div className="flex flex-col md:flex-row md:gap-x-2 items-center gap-y-2 justify-center">
                             <Button link={'/CV_IdaBagusAriWidhiana.pdf'} label={'Download CV'} position={'left'} icon={
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">

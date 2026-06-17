@@ -7,24 +7,24 @@ import { Button } from "@/components/shared-components/Button";
 import heroImage from "@/assets/images/about/about-me.png";
 
 const aboutParagraph = [
-    "My name is Ida Bagus Ari Widhiana. You can call me Bagus Ari. I am a student at Udayana University, majoring in Computer Science, with expertise in Software Engineering and UI/UX Design.",
-    "With a strong passion for technology and creativity, I specialize in designing user-friendly interfaces and building efficient software solutions.",
-    "Ever since my time in University, programming and design has fascinated me. To deepen my expertise, I have sought additional learning resources such as YouTube tutorials, Udemy courses, and various blogs.",
-    "I reside in Bali. And I'm always enthusiastic about connecting with new people. If you'd like to get in touch, please feel free to visit my social media or reach out to me via email.",
+    "My name is Ida Bagus Ari Widhiana. You can call me Bagus Ari. I am a motivated Computer Science graduate from Udayana University with a GPA of 3.88, specializing in Software Engineering and UI/UX Design.",
+    "With a strong passion for technology and creativity, I focus on crafting user-friendly interfaces and efficient software solutions.",
+    "I have a deep love for learning new things. To continuously enhance my programming and design skills, I actively seek out learning resources such as Udemy courses, YouTube tutorials, and tech blogs.",
+    "Based in Bali, I'm always open to connecting and collaborating with new people. If you'd like to get in touch, please feel free to visit my social media or reach out via email.",
     "Thank you, and I'm looking forward to connecting with you!"
 ]
 
 export const Hero = () => {
     return (
         <>
-            <section className="py-32 md:py-48 lg:py-60">
+            <section className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
                 <Bubble size={820} />
                 <Bubble size={1220} />
                 <Bubble size={1620} />
                 <div className="container">
                     <div className="flex gap-8 flex-col lg:flex-row lg:justify-between relative z-10">
                         <div className="flex flex-col gap-y-8 max-w-2xl">
-                            <h2 className="text-2xl md:text-4xl font-bold">Hi, I&apos;m <span className="text-purple-300">Bagus Ari</span>. A junior Software Engineer and UI/UX Designer based in Bali, Indonesia.</h2>
+                            <h2 className="text-2xl md:text-4xl font-bold">Hi, I&apos;m <span className="text-purple-300">Bagus Ari</span>. A passionate Software Engineer and UI/UX Designer based in Bali, Indonesia.</h2>
                             <div className="flex flex-col gap-y-4">
                                 {aboutParagraph.map((item, index) => (
                                     <p key={index} className="text-white/60 text-sm md:text-base">{item}</p>
@@ -55,7 +55,7 @@ export const Hero = () => {
                             </div>
                         </div>
                         <div>
-                            <Image className="rounded-xl sm:rounded-2xl h-auto mx-auto" src={heroImage}  width={400} height={400} alt="hero-image" />
+                            <Image className="rounded-xl sm:rounded-2xl h-auto mx-auto" src={heroImage} width={400} height={400} alt="hero-image" />
                         </div>
                     </div>
                 </div>

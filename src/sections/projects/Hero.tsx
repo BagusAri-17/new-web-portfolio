@@ -11,12 +11,13 @@ import sportInspireIDImage from "@/assets/images/projects/project-sportinspireid
 import himaifUdayanaImage from "@/assets/images/projects/project-himaifudayana.png";
 import inventionImage from "@/assets/images/projects/project-invention.png";
 import hidataImage from "@/assets/images/projects/project-hidata.png";
+import reprohealthImage from "@/assets/images/projects/project-reprohealth.png";
 
 const projects = [
     {
         title: 'Umah Buku',
         description: "Umah Buku is a website offering a diverse collection of storybooks, including children's stories, novels, and short stories, across various genres for visitors to enjoy.",
-        tag: ['Javascript','Tailwind', 'React JS', 'Firebase'],
+        tag: ['Javascript', 'Tailwind', 'React JS', 'Firebase'],
         linkDemo: 'https://mini-project-umah-buku.vercel.app/',
         linkCode: 'https://github.com/BagusAri-17/mini-project_umah-buku',
         image: umahBukuImage
@@ -24,7 +25,7 @@ const projects = [
     {
         title: 'My Journals',
         description: 'My Journals is a website offering a variety of journals aligned with the nine streams of Computer Science, Udayana University.',
-        tag: ['Javascript','Tailwind', 'React JS', 'Firebase'],
+        tag: ['Javascript', 'Tailwind', 'React JS', 'Firebase'],
         linkDemo: 'https://my-journals.vercel.app/',
         linkCode: 'https://github.com/BagusAri-17/My-Journals',
         image: myJournalsImage
@@ -32,7 +33,7 @@ const projects = [
     {
         title: 'Wisata Cemagi',
         description: 'Wisata Cemagi is a website designed to showcase various tourist attractions in Cemagi Village, created as part of a street vendor project.',
-        tag: ['Javascript','Tailwind', 'React JS'],
+        tag: ['Javascript', 'Tailwind', 'React JS'],
         linkDemo: 'https://wisata-cemagi.vercel.app/',
         linkCode: '',
         image: wisataCemagiImage
@@ -40,7 +41,7 @@ const projects = [
     {
         title: 'Sport Inspire ID',
         description: 'Sport Inspire ID is a static website offering comprehensive information about sports in Indonesia, including articles, news, tips, and details on available sports. It was developed for a competition.',
-        tag: ['Javascript','Tailwind', 'React JS'],
+        tag: ['Javascript', 'Tailwind', 'React JS'],
         linkDemo: 'https://sport-inspire-id.netlify.app/',
         linkCode: 'https://github.com/BagusAri-17/Sport-Inspire-ID',
         image: sportInspireIDImage
@@ -48,7 +49,7 @@ const projects = [
     {
         title: 'Web HIMAIF Udayana',
         description: 'HIMAIF Udayana Web is a website provides information about the student association for Computer Science and Computer Science programs at Udayana University.',
-        tag: ['PHP','Tailwind', 'Laravel'],
+        tag: ['PHP', 'Tailwind', 'Laravel'],
         linkDemo: 'https://himaif-udayana.com/',
         linkCode: '',
         image: himaifUdayanaImage
@@ -56,7 +57,7 @@ const projects = [
     {
         title: 'Invention Udayana',
         description: 'Invention Udayana is a website used for registration of participants in invention competitions.',
-        tag: ['PHP','Tailwind', 'Laravel'],
+        tag: ['PHP', 'Tailwind', 'Laravel'],
         linkDemo: 'https://invention-udayana.com/',
         linkCode: '',
         image: inventionImage
@@ -68,6 +69,14 @@ const projects = [
         linkDemo: 'https://hidata.id/',
         linkCode: '',
         image: hidataImage
+    },
+    {
+        title: 'ReproHealth',
+        description: 'ReproHealth is a comprehensive health-tech platform developed to improve public education on reproductive health, providing digital tools for both general users and registered medical professionals.',
+        tag: ['Javascript', 'Tailwind', 'React JS', 'Chakra UI'],
+        linkDemo: 'http://reprohealth.netlify.app/',
+        linkCode: '',
+        image: reprohealthImage
     }
 ];
 

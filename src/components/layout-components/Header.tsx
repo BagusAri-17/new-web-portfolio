@@ -19,8 +19,8 @@ const headerLinks = [
         link: '/projects'
     },
     {
-        title: 'Works',
-        link: '/works'
+        title: 'Experiences',
+        link: '/experiences'
     },
 ];
 
